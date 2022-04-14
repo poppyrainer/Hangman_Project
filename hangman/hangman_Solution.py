@@ -1,9 +1,3 @@
-
-# I got rid of some code here "-> None", what does that mean?
-# need to take into account lower case of letter
-# need to install python v3
-
-
 import random
 
 class Hangman:
@@ -20,21 +14,20 @@ class Hangman:
         pass
 
     def check_letter(self, letter):
-        if letter in list(self.word):
+        if letter.lower() in list(self.word):
             self.num_letters = self.num_letters - 1
             my_word_list = list(self.word)
             position_lst = []
             for pos,char in enumerate(self.word):
                 if(char == letter):
                     position_lst.append(pos)
-            print(position_lst)
             for i in position_lst:
-                self.word_guessed[i] = letter  
+                self.word_guessed[i] = letter 
         else:
             self.num_lives = self.num_lives - 1
 
     def ask_letter(self):
-            letter = raw_input("enter a letter: ")
+            letter = input("enter a letter: ")
             if len(letter) >1:
                  print("Please, enter just one character")
             if letter in self.list_letters:
