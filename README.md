@@ -1,13 +1,5 @@
 # Hangman Project
 
-## Table of contents
-* [Introduction](#introduction)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-
-
 # Intoduction
 
 This is the first training project as part of The AiCore 16w Accelerator programme. 
@@ -24,6 +16,13 @@ The game is played as follows:
 
 # Technologies Used
 - Python
+
+This project was also used as a way to learn:
+- How to use Visual Studio Code
+- How to format python including doc strings
+- How to use markdown language to create a README.md file
+- How to use Git and GitHub
+- How to use the terminal
 
 # Technical Description
 - The main function of the programme is the *play_game* function which takes in a hardcoded list of words as the argument.
